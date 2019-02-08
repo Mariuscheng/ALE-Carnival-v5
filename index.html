@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shitlife</title>
+    <link rel="stylesheet" href="typing.css">
+</head>
+
+<body>
+    <p id="type"></p>
+    <script type="text/javascript">
+    var i = 0;
+    var txt = "我很厭世";
+    var speed = 150;
+
+    function type() {
+        document.getElementById("type").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(type, speed);
+    }
+    type();
+    </script>
+</body>
+
+</html>
