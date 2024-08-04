@@ -6,7 +6,7 @@ def main():
 
   user_input = st.text_area("What do you want to ask?","")
 
-  if st.button("SEND")
+  if st.button("SEND"):
     if user_input:
       response = ollama.chat(model='mistral', message=[{'role': 'user', 'content': user_input}])
 
